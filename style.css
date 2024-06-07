@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+span {
+  color: #00000097;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  width: 100%;
+}
+
+.screen-container {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
+
+/*Header___________________________________________ */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.social-media-icons i {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/*Navbar___________________________________________ */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0rem;
+  background-color: #fff;
+}
+
+.navbar .links {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  list-style: none;
+}
+
+.nav-links {
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.nav-links:hover {
+  opacity: 0.5;
+}
+
+.navbar .links .active {
+  opacity: 0.5;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid #111;
+  padding-bottom: 0.5rem;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search i {
+  font-size: 1.3rem;
+}
+
+/*Topics___________________________________________  */
+.topics {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.topics .rows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topics .rows .cols {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+
+.topics .rows .cols .image {
+  width: 125px;
+  height: 100px;
+  box-shadow: 1px 1px 10px #11111111;
+}
+
+.topics .rows .cols .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.topics .rows .cols .content .category {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.topics .rows .cols .content .title {
+  font-size: 0.8rem;
+  padding-top: 0.3rem;
+  font-weight: 600;
+}
+
+/*Headlines___________________________________________  */
+.headlines {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.headlines .rows {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.latest-news .heading {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.latest-news {
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-news .cols {
+  padding-top: 2.5rem;
+}
+
+.latest-news .image {
+  height: 200px;
+  width: 300px;
+}
+
+.latest-news .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.latest-news .contents p {
+  padding: 0.8rem 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.latest-news .contents h1 {
+  font-size: 1.15rem;
+}
+
+/*Trending___________________________________________  */
+.trending .heading {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.trending .image {
+  padding-top: 2.5rem;
+  width: 600px;
+  height: 500px;
+}
+
+.trending .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.trending .contents p {
+  font-weight: 500;
+  padding-top: 1.5rem;
+}
+
+.trending .contents .heading {
+  font-size: 1.6rem;
+  padding-top: 0.5rem;
+}
+
+.trending .contents .description {
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding-top: 0.8rem;
+  opacity: 0.8;
+}
+
+/*Business___________________________________________  */
+.business .heading {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.business .rows {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5rem;
+}
+
+.business .rows .cols {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.business .rows h1 {
+  font-size: 1rem;
+}
+
+.business .rows .cols p {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+/*Footer___________________________________________  */
+footer {
+  padding: 3.5rem 0;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .row .categories {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer .row .categories h1 {
+  font-size: 1.25rem;
+  font-family: "Times New Roman";
+}
+
+footer .row .categories .links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 1.5rem;
+}
+
+footer .row .helpful_link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer .row .helpful_link h1 {
+  font-size: 1.25rem;
+  font-family: "Times New Roman";
+}
+
+footer .row .helpful_link .links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}
+
+footer .row .subs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer .row .subs h1 {
+  font-size: 1.25rem;
+  font-family: "Times New Roman";
+}
+
+footer .row .subs .email_box {
+  margin-top: 1rem;
+  width: 350px;
+  height: 50px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+footer .row .subs .email_box input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  height: 40px;
+  padding: 1rem;
+  width: 250px;
+}
+footer .row .subs .email_box button {
+  height: 30px;
+  width: 85px;
+  border: none;
+  background-color: #111;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+footer .row .subs .terms {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}
+
+footer .row .subs .terms p {
+  font-size: 0.8rem;
+}
+
+footer .row .subs .terms a {
+  text-decoration: underline;
+}
+
+/* Tablet Responsive_________________________________*/
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+/* Mobile Responsive_________________________________*/
+@media only screen and (max-width: 480px) {
+}
